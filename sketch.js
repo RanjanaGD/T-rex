@@ -72,9 +72,9 @@ function draw() {
   
   if(gameState===PLAY){
   score = score + Math.round(getFrameRate()/60);
+  console.log(trex.y);
   
-  
-  if(keyDown("space")) {
+  if(keyDown("space")&&trex.y>=161) {
     trex.velocityY = -10;
   }
   
